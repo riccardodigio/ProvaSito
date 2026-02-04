@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('img/sfondo.png'); 
+    
+    background-size: cover;         
+    background-position: center;   
+    background-repeat: no-repeat;  
+    background-attachment: fixed;   
+    
+    color: #1a1a50; 
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #262660; 
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+.main-title {
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+.main-title h1 {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    color: #262660;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.main-title .highlight {
+    color: #f06ec0; 
+}
+
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 20px; 
+}
+
+
+.text-box {
+    background-color: #ff85c8; 
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.text-box h2 {
+    font-family: 'Anton', sans-serif;
+    color: #262660; 
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.text-box p {
+    color: white; 
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.image-box {
+    background-color: #f0f0f0; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+}
+
+@media (min-width: 768px) {
+    .card-row {
+        flex-direction: row;
+        align-items: stretch; 
+    }
+}
